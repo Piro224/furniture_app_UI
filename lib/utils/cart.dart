@@ -95,6 +95,7 @@ class CartPage extends StatelessWidget {
                   ),
                   padding: const EdgeInsets.all(20),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
                         // ignore: prefer_const_literals_to_create_immutables
@@ -110,6 +111,33 @@ class CartPage extends StatelessWidget {
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
                         ],
+                      ),
+                      GestureDetector(
+                        onTap: (){},
+                        child: Container(
+                          height: 70,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Row(
+                            children: const [
+                              Center(
+                                child: Padding(
+                                  padding: EdgeInsets.only(left:12.0, ),
+                                  child: Text(
+                                    "Check out",
+                                    style: TextStyle(
+                                        color: Colors.amber,
+                                        fontWeight: FontWeight.bold, fontSize: 16),
+                                  ),
+                                ),
+                              ),
+                              Icon(Icons.arrow_forward_ios, size: 16, color: Colors.amber,)
+                            ],
+                          ),
+                        ),
                       ),
                     ],
                   ),
