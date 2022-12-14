@@ -98,22 +98,25 @@ class CartPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
-                        // ignore: prefer_const_literals_to_create_immutables
                         children: [
                           const Text(
                             "Total Price: ",
                             style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                           Text(
                             "\$${value.CalculatePrice()}",
                             style: const TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ],
                       ),
                       GestureDetector(
-                        onTap: (){},
+                        onTap: () {},
                         child: Container(
                           height: 70,
                           width: 120,
@@ -125,16 +128,23 @@ class CartPage extends StatelessWidget {
                             children: const [
                               Center(
                                 child: Padding(
-                                  padding: EdgeInsets.only(left:12.0, ),
+                                  padding: EdgeInsets.only(
+                                    left: 12.0,
+                                  ),
                                   child: Text(
                                     "Check out",
                                     style: TextStyle(
                                         color: Colors.amber,
-                                        fontWeight: FontWeight.bold, fontSize: 16),
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16),
                                   ),
                                 ),
                               ),
-                              Icon(Icons.arrow_forward_ios, size: 16, color: Colors.amber,)
+                              Icon(
+                                Icons.arrow_forward_ios,
+                                size: 16,
+                                color: Colors.amber,
+                              ),
                             ],
                           ),
                         ),
