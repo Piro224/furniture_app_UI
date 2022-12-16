@@ -118,7 +118,7 @@ class CartPage extends StatelessWidget {
                       GestureDetector(
                         onTap: () {},
                         child: Container(
-                          height: 70,
+                          height: 60,
                           width: 120,
                           decoration: BoxDecoration(
                             color: Colors.black,
@@ -131,19 +131,23 @@ class CartPage extends StatelessWidget {
                                   padding: EdgeInsets.only(
                                     left: 12.0,
                                   ),
-                                  child: Text(
-                                    "Check out",
-                                    style: TextStyle(
-                                        color: Colors.amber,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16),
+                                  child: FittedBox(
+                                    child: Text(
+                                      "Check out",
+                                      style: TextStyle(
+                                          color: Colors.amber,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16),
+                                    ),
                                   ),
                                 ),
                               ),
-                              Icon(
-                                Icons.arrow_forward_ios,
-                                size: 16,
-                                color: Colors.amber,
+                              FittedBox(
+                                child: Icon(
+                                  Icons.arrow_forward_ios,
+                                  size: 16,
+                                  color: Colors.amber,
+                                ),
                               ),
                             ],
                           ),

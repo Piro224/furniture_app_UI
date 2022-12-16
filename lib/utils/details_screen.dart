@@ -101,12 +101,15 @@ class DetailsScreen extends StatelessWidget {
                                       ]),
                                   child: Stack(
                                     children: [
-                                      AspectRatio(
-                                          aspectRatio: 1,
-                                          child: Image.asset(
-                                            imagepath,
-                                            fit: BoxFit.cover,
-                                          ))
+                                      Hero(
+                                        tag: itemId,
+                                        child: AspectRatio(
+                                            aspectRatio: 1,
+                                            child: Image.asset(
+                                              imagepath,
+                                              fit: BoxFit.cover,
+                                            )),
+                                      )
                                     ],
                                   ),
                                 ),

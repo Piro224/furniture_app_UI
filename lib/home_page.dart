@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blue[900],
       appBar:  AppBar(
+        centerTitle: false,
       title: const Text("Dashboard"),
       elevation: 0,
       backgroundColor: Colors.blue[900],
