@@ -54,7 +54,7 @@ class Product extends ChangeNotifier {
 
   get products => _products;
 
-  get carItems => _cartitems;
+  get cartitems => _cartitems;
 }
 
 

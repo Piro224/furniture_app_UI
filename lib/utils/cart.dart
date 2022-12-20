@@ -43,7 +43,7 @@ class CartPage extends StatelessWidget {
             children: [
               Expanded(
                 child: ListView.builder(
-                  itemCount: value.carItems.length,
+                  itemCount: value.cartitems.length,
                   physics: const BouncingScrollPhysics(),
                   itemBuilder: (context, index) {
                     return Container(
@@ -53,19 +53,19 @@ class CartPage extends StatelessWidget {
                         leading: Padding(
                           padding: const EdgeInsets.all(12.0),
                           child: Image.asset(
-                            value.carItems[index][3],
+                            value.cartitems[index][3],
                             fit: BoxFit.cover,
                           ),
                         ),
                         title: Text(
-                          value.carItems[index][2],
+                          value.cartitems[index][2],
                           style: const TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         subtitle: Text(
-                          "\$${value.carItems[index][1]}",
+                          "\$${value.cartitems[index][1]}",
                           style: const TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
